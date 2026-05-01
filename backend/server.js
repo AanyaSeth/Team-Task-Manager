@@ -19,7 +19,7 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
 
 // Database connection
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/team-task-manager';
 
 mongoose.connect(MONGO_URI, {
